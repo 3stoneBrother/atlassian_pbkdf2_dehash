@@ -1,6 +1,6 @@
 # atlassian_pbkdf2_dehash
 ## 初衷
-atlassian confluence产品，爆发CVE-2021-26084漏洞,在一次HW项目中通过内网目标机器不出网，通过CVE-2021-26084漏洞写入公钥，拿到服务器权限。在`<confluence-home-directory>/database`
+atlassian confluence产品，爆发CVE-2021-26084漏洞,在一次HW项目中内网目标机器不出网，通过CVE-2021-26084漏洞写入公钥，拿到服务器权限。在`<confluence-home-directory>/database`
 文件夹中找到数据库账号密码。一种方法是通过查找管理员，通过修改hash值登陆web管理后台。具体方法如下：
 ```
 ## 获取管理员账号，id
